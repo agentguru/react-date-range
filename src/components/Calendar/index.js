@@ -525,7 +525,7 @@ Calendar.defaultProps = {
     enabled: false,
   },
   direction: 'vertical',
-  maxDate: addYears(new Date(), 20),
+  maxDate: addYears(new Date(), 5),
   minDate: addYears(new Date(), -100),
   rangeColors: ['#3d91ff', '#3ecf8e', '#fed14c'],
   startDatePlaceholder: 'Early',
