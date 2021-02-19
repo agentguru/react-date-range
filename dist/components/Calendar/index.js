@@ -551,7 +551,6 @@ function (_PureComponent) {
           focusedDate = _this$state.focusedDate;
       var isVertical = direction === 'vertical';
       var monthAndYearRenderer = navigatorRenderer || this.renderMonthAndYear;
-      console.log(this.props);
       var ranges = this.props.ranges.map(function (range, i) {
         return _objectSpread({}, range, {
           color: range.color || rangeColors[i] || color
