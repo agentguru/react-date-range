@@ -13,7 +13,7 @@ This component extends all the props of **[Calendar](#calendar)** component. In 
 import {useState} from 'react'
 const [state, setState] = useState([
     {
-      startDate: new Date(),
+      startDate: null,
       endDate: null,
       key: 'selection'
     }
@@ -24,5 +24,13 @@ const [state, setState] = useState([
   onChange={item => setState([item.selection])}
   moveRangeOnFirstSelection={false}
   ranges={state}
+  className="calendar"
+  months={3}
+  minDate={new Date()}
+  dragSelectionEnabled
+  direction="vertical"
+  scroll={{ enabled: true, monthHeight: 320 }}
+  showDateDisplay={false}
+  showMonthAndYearPickers={false}
 />
 ```
