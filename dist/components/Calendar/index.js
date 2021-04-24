@@ -29,6 +29,10 @@ var _enUS = _interopRequireDefault(require("date-fns/locale/en-US"));
 
 var _styles = _interopRequireDefault(require("../../styles"));
 
+var _prevButton = _interopRequireDefault(require("../../assets/prevButton.svg"));
+
+var _nextButton = _interopRequireDefault(require("../../assets/nextButton.svg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
@@ -218,7 +222,10 @@ function (_PureComponent) {
         onClick: function onClick() {
           return changeShownDate(-1, 'monthOffset');
         }
-      }, _react["default"].createElement("i", null)) : null, showMonthAndYearPickers ? _react["default"].createElement("span", {
+      }, _react["default"].createElement("img", {
+        src: _prevButton["default"],
+        alt: "prevButton"
+      })) : null, showMonthAndYearPickers ? _react["default"].createElement("span", {
         className: styles.monthAndYearPickers
       }, _react["default"].createElement("span", {
         className: styles.monthPicker
@@ -255,7 +262,10 @@ function (_PureComponent) {
         onClick: function onClick() {
           return changeShownDate(+1, 'monthOffset');
         }
-      }, _react["default"].createElement("i", null)) : null);
+      }, _react["default"].createElement("img", {
+        src: _nextButton["default"],
+        alt: "nextButton"
+      })) : null);
     });
 
     _defineProperty(_assertThisInitialized(_this), "renderDateDisplay", function () {

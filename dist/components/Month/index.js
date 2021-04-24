@@ -108,6 +108,8 @@ function (_PureComponent) {
       return _react["default"].createElement("div", {
         className: styles.month,
         style: this.props.style
+      }, _react["default"].createElement("div", {
+        className: "rdrMonthContainer"
       }, this.props.showMonthName ? _react["default"].createElement("div", {
         className: styles.monthName
       }, (0, _dateFns.format)(this.props.month, this.props.monthDisplayFormat, this.props.dateOptions)) : null, this.props.showWeekDays && renderWeekdays(styles, this.props.dateOptions, this.props.weekdayDisplayFormat), _react["default"].createElement("div", {
@@ -147,7 +149,7 @@ function (_PureComponent) {
           dragRange: drag.range,
           drag: drag.status
         }));
-      })));
+      }))));
     }
   }]);
 
