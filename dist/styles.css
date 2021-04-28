@@ -12,14 +12,14 @@
           user-select: none;
 }
 
-.rdrDateDisplay{
+.rdrDateDisplay {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
 }
 
-.rdrDateDisplayItem{
+.rdrDateDisplayItem {
   -webkit-box-flex: 1;
           flex: 1 1;
   width: 0;
@@ -27,19 +27,20 @@
   color: inherit;
 }
 
-.rdrDateDisplayItem + .rdrDateDisplayItem{
+.rdrDateDisplayItem + .rdrDateDisplayItem {
     margin-left: 0.833em;
   }
 
-.rdrDateDisplayItem input{
+.rdrDateDisplayItem input {
     text-align: inherit
   }
 
-.rdrDateDisplayItem input:disabled{
+.rdrDateDisplayItem input:disabled {
       cursor: default;
     }
 
-.rdrDateDisplayItemActive{}
+.rdrDateDisplayItemActive {
+}
 
 .rdrMonthAndYearWrapper {
   box-sizing: inherit;
@@ -49,7 +50,7 @@
           justify-content: space-between;
 }
 
-.rdrMonthAndYearPickers{
+.rdrMonthAndYearPickers {
   -webkit-box-flex: 1;
           flex: 1 1 auto;
   display: -webkit-box;
@@ -60,9 +61,11 @@
           align-items: center;
 }
 
-.rdrMonthPicker{}
+.rdrMonthPicker {
+}
 
-.rdrYearPicker{}
+.rdrYearPicker {
+}
 
 .rdrNextPrevButton {
   box-sizing: inherit;
@@ -70,22 +73,24 @@
   outline: none;
 }
 
-.rdrPprevButton {}
+.rdrPprevButton {
+}
 
-.rdrNextButton {}
+.rdrNextButton {
+}
 
-.rdrMonths{
+.rdrMonths {
   display: -webkit-box;
   display: flex;
 }
 
-.rdrMonthsVertical{
+.rdrMonthsVertical {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
 }
 
-.rdrMonthsHorizontal > div > div > div{
+.rdrMonthsHorizontal > div > div > div {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -93,11 +98,11 @@
           flex-direction: row;
 }
 
-.rdrMonth{
+.rdrMonth {
   width: 27.667em;
 }
 
-.rdrWeekDays{
+.rdrWeekDays {
   display: -webkit-box;
   display: flex;
 }
@@ -108,19 +113,25 @@
   text-align: center;
 }
 
-.rdrDays{
+.rdrDays {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
 }
 
-.rdrDateDisplayWrapper{}
+.rdrDateDisplayWrapper {
+}
 
-.rdrMonthName{}
+.rdrMonthName {
+}
 
-.rdrInfiniteMonths{
+.rdrInfiniteMonths {
   overflow: auto;
 }
+
+.rdrInfiniteMonths div {
+    touch-action: none;
+  }
 
 .rdrDateRangeWrapper{
   -webkit-user-select: none;

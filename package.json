@@ -10,7 +10,8 @@
     "build:js": "babel ./src --out-dir ./dist --ignore test.js",
     "lint": "eslint 'src/**/*.js'",
     "test": "jest",
-    "preversion": "yarn clear & yarn build"
+    "preversion": "yarn clear & yarn build",
+    "fork": "yarn build && yarn build:css && yarn build:js"
   },
   "keywords": [
     "react",
