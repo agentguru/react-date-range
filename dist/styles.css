@@ -129,9 +129,12 @@
   overflow: auto;
 }
 
-.rdrInfiniteMonths div {
-    touch-action: none;
+@media (min-width: 577px) {
+
+  .rdrInfiniteMonths div {
+      touch-action: none
   }
+    }
 
 .rdrDateRangeWrapper{
   -webkit-user-select: none;
