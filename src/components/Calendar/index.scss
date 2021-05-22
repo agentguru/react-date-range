@@ -103,6 +103,8 @@
   overflow: auto;
 
   div {
-    touch-action: none;
+    @media (min-width: 577px) {
+      touch-action: none;
+    }
   }
 }
